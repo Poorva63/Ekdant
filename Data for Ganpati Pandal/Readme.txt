@@ -1,2 +1,6 @@
-Data Source
-https://newsable.asianetnews.com/lifestyle/ganesh-chaturthi-2022-famous-ganpati-pandals-in-mumbai-and-pune-to-visit-this-year-adt-rhj60d
+The folder contains the famous_ganpati_to_visit.csv file which is loaded in the database.
+
+and tableau twbx file for visualization of the city and count of pandals on the map.
+
+
+Thank You!!
