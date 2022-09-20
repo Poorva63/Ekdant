@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ganpati Pandal </title>
+</head>
+<style>
+    
+</style>
+<body>
+    <div align="center">
+        <table border="1">
+            <thead>
+                <td> Pandals </td>
+                <td> City </td>
+                <td> State </td>
+                <td> Address </td>
+                <td> Information </td>
+                <td> Year of Establishment </td>
+                <td> Website </td>
+            </thead>
+            {% for i in i %}
+            <tr>
+                <td>{{i[1]}}</td>
+                <td>{{i[2]}}</td>
+                <td>{{i[3]}}</td>
+                <td>{{i[4]}}</td>
+                <td>{{i[5]}}</td>
+                <td>{{i[6]}}</td>
+                <td>{{i[7]}}</td>
+                <td> <a href="https://www.google.com/maps/place/{{i[4]}}"> Location </a></td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+</body>
+</html>

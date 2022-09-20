@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Ganpati Pandal Website</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    
+
+    .mySlides {
+      display: none
+    }
+
+    nav {
+      margin: 0;
+      top: 0;
+      position: relative;
+      width: 100%;
+      height: 50px;
+      background-color: rgb(0, 0, 0);
+      border-radius: 0;
+      font-size: 0;
+    }
+
+    h3 {
+      top: 20px;
+    }
+
+    nav a {
+      line-height: 50px;
+      height: 100%;
+      font-size: 15px;
+      display: inline-block;
+      position: relative;
+      z-index: 3;
+      text-decoration: none;
+      text-transform: uppercase;
+      text-align: center;
+      color: white;
+      cursor: pointer;
+    }
+
+    nav .animation {
+      position: absolute;
+      height: 100%;
+      left: 100px;
+      top: 0;
+      z-index: 0;
+      transition: all .5s ease 0s;
+      border-radius: 2px;
+    }
+
+    a:nth-child(1) {
+      width: 100px;
+    }
+
+    a:nth-child(2) {
+      width: 110px;
+    }
+
+    a:nth-child(3) {
+      width: 160px;
+    }
+
+    a:nth-child(4) {
+      width: 120px;
+    }
+
+    nav .start-home,
+    a:nth-child(1):hover~.animation {
+      width: 100px;
+      left: 490px;
+      background-color: darkred;
+    }
+
+    nav .start-about,
+    a:nth-child(2):hover~.animation {
+      width: 110px;
+      left: 590px;
+      background-color: #e74c3c;
+    }
+
+    nav .start-blog,
+    a:nth-child(3):hover~.animation {
+      width: 160px;
+      left: 700px;
+      background-color: #3498db;
+    }
+
+    nav .start-portefolio,
+    a:nth-child(4):hover~.animation {
+      width: 100px;
+      left: 870px;
+      background-color: #9b59b6;
+    }
+
+
+    .btn {
+      background-color: #008CBA;
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .btn1 {
+      background-color: #008CBA;
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      text-align: center;
+      cursor: pointer
+    }
+
+    #services {
+      margin: 34px;
+      display: flex;
+    }
+
+    #services .box {
+      border: 2px solid brown;
+      padding: 34px;
+      margin: 2px 55px;
+      border-radius: 28px;
+      background: #f2f2f2;
+      margin-bottom: 20px;
+    }
+
+    #services .box img {
+      height: 160px;
+      margin: auto;
+      display: block;
+    }
+
+    #services .box p {
+      font-family: 'Bree Serif', serif;
+
+    }
+
+    .card-group {
+      float: left;
+      width: 20%;
+      padding: 6px 10px;
+    }
+
+
+
+
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      padding: 10px 26px;
+      text-align: center;
+      border-radius: 20px;
+      background-color: #f1f1f1;
+    }
+
+    img {
+      height: 75%;
+      width: 100%;
+    }
+
+    .fixed {
+      position: fixed;
+      z-index: 2;
+    }
+
+    .container {
+      display: grid;
+    }
+  </style>
+</head>
+
+<body class="w3-orange">
+
+  <nav class="fixed">
+    <center>
+      <a href="/">Home</a>
+      <a href="#services">Services</a>
+      <a href="#darshan">Live Darshan</a>
+      <a href="#">About</a>
+      <div class="animation start-home"></div>
+    </center>
+  </nav>
+
+  <div class="mySlides w3-display-container w3-center">
+    <img src="https://cdn.dnaindia.com/sites/default/files/styles/full/public/2021/01/16/950212-873427-ganesh-festival-afp.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>GANPATI BAPPA MORYA</h3>
+      <button class="btn" style="padding: 13px 65px;"><b>Go!</b></button>
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img
+      src="https://www.mumbailive.com/images/media/images/images_1565583098290_chinchpokli_2.jpg?bg=2f2e2d&crop=2448%2C1374.3157894736842%2C0%2C128.84210526315792&fit=crop&fm=webp&h=768&height=1632&w=1368&width=2448"
+      style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>GANPATI BAPPA MORYA</h3>
+      <a href="/ganpatiinfo"><button class="btn" style="padding: 13px 65px;"><b>Go!</b></button></a>
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img
+      src="https://gumlet.assettype.com/freepressjournal/2021-09/d738409a-3238-4b63-9949-3ed5ff9797cc/hrutvikraj_mandekar_7LHByF4aZuM_unsplash.jpg?rect=0%2C0%2C3900%2C2048&w=1200&auto=format%2Ccompress&ogImage=true"
+      style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>GANPATI BAPPA MORYA</h3>
+      <a href="/"></a><button class="btn" style="padding: 13px 65px;"><b>Go!</b></button>
+    </div>
+  </div>
+
+
+  <br><br>
+  <div class="w3-b" id="services"></div>
+  <center>
+    <h1>Services</h1>
+  </center>
+  <br><br>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
+
+  <div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 m-2 text-center card">
+            <img src="https://rukminim1.flixcart.com/image/1408/1408/painting/c/9/u/ie1035-dkh-original-imaegyvfahrrehfh.jpeg?q=90">
+          <h3 class="heading-s1">Ganpati Darshan</h3>
+          <p class="center"> Ganesh appears in the medieval Puranas in the form of "god of success, obstacle remover".
+            The Skanda Purana, Narada Purana, profusely praise him.</p>
+          <a href="" class="btn big-btn no-border red-background unstyle-anchor" style="padding: 13px 45px;">Go!</a>
+        </div>
+        <div class="col-lg-6 m-2 text-center card">
+          <img src="https://images.news18.com/ibnlive/uploads/2021/09/ganpati-aarti.jpg">
+          <h3 class="heading-s1">Ganesh Aarti</h3>
+
+          <p class="center">Shankarachi aarti, Devichi aarti Marathi, Vitthalachi aarti, Dattachi aarti and Ghalin
+            Lotangan Marathi Aarti </p>
+          <a href="" class="btn big-btn no-border red-background unstyle-anchor" style="padding: 13px 45px;">Go!</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+
+  <div class="w3-b" id="darshan">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h2 class="w3-wide w3-center">LIVE DARSHAN</h2>
+      <p class="w3-opacity w3-center"><i>SEE THE GANAPATI LIVE</i></p><br>
+
+      <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0U6luFYODcRi68jBYvzOMAsvgMR1dijow3A&usqp=CAU"
+            style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p>
+            <h3><b>LALBAUGCHA RAJA</b></h3>
+            </p>
+            <p class="w3-opacity">Well known as "NAVSALA PAVNARA GANPATI" and long history</p>
+            <center><a href="https://youtu.be/goannz4_i1A"><button class="btn1"> <b>Live Darshan</b></button></a>
+            </center><br>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <img src="https://mylordganesha.files.wordpress.com/2015/09/ganesh-galli1.jpg" style="width:100%"
+            class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p>
+            <h3><b>MUMBAICHA RAJA</b></h3>
+            </p>
+            <p class="w3-opacity">Well known as the raja of biggest financial city of India</p>
+            <center><a href="https://youtu.be/sM6sT9Wwb5E"><button class="btn1"> <b>Live Darshan</b></button></a>
+            </center><br>
+          </div>
+        </div>
+
+
+        <div class="w3-third w3-margin-bottom">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzEDc5ffs7KUGy5uZ3gzonQe_NdHWux1MpUw&usqp=CAU"
+            style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p>
+            <h3><b>CHINCHPOKLI CHINTAMANI</b></h3>
+            </p>
+            <p class="w3-opacity">Well known beacause of social activities and long history</p>
+            <center><a href="https://youtu.be/FqXTmp-rNi4"><button class="btn1"> <b>Live Darshan</b></button></a>
+            </center><br>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <script>
+
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) { myIndex = 1 }
+      x[myIndex - 1].style.display = "block";
+      setTimeout(carousel, 4000);
+    }
+  </script>
+
+</body>
+
+</html>
